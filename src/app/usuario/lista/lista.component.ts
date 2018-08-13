@@ -8,13 +8,13 @@ import {UsuarioService} from './../usuario.service'
 })
 export class ListaComponent implements OnInit {
   
-  serviceUsuario : UsuarioService ;
-
-  constructor() {
-    this.serviceUsuario.listaUsuarios();
-   }
  
-  ngOnInit() {
+
+  constructor(  public serviceUsuario : UsuarioService){}
+ 
+  ngOnInit() 
+  {
+    this.serviceUsuario.listaUsuarios();
   }
 
 }
