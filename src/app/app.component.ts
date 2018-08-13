@@ -1,5 +1,6 @@
 
 import { Component } from '@angular/core'
+import { log } from 'util';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,9 @@ export class AppComponent {
   title = 'webservice-cpf-admin';
 
 
-  constructor() {
+  constructor()
+  {
+      log("AppComponent Criado");
+  } 
 
-  }
 }
