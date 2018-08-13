@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import {UsuarioService} from './../usuario.service'
 
 @Component({
@@ -7,9 +7,13 @@ import {UsuarioService} from './../usuario.service'
   styleUrls: ['./lista.component.css']
 })
 export class ListaComponent implements OnInit {
+  
+  serviceUsuario : UsuarioService ;
 
-  constructor() { }
-
+  constructor() {
+    this.serviceUsuario.listaUsuarios();
+   }
+ 
   ngOnInit() {
   }
 
