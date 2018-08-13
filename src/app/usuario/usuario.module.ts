@@ -4,7 +4,8 @@ import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ListaComponent
   ],
   declarations: [ListaComponent]
 })
